@@ -152,4 +152,5 @@ jobs:
         with:
           name: apk-${{ matrix.build_type }}-${{ steps.set_sha.outputs.short_sha }}
           # path: app-${{ matrix.build_type }}.apk
-          path: */../../*.apk
+          path: app/../../*.apk
+          
