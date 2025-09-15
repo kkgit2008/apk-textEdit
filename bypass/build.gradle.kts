@@ -26,8 +26,8 @@ android {
 //    externalNativeBuild {
 //        cmake {
 //            path("src/main/cpp/CMakeLists.txt")
-/:            version = libs.versions.cmake.get()
-/:        }
+//            version = libs.versions.cmake.get()
+//        }
 //    }
 
     buildTypes {
