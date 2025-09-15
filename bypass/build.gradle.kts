@@ -23,12 +23,12 @@ android {
         }
     }
     
-    externalNativeBuild {
-        cmake {
-            path("src/main/cpp/CMakeLists.txt")
-            version = libs.versions.cmake.get()
-        }
-    }
+//    externalNativeBuild {
+//        cmake {
+//            path("src/main/cpp/CMakeLists.txt")
+/:            version = libs.versions.cmake.get()
+/:        }
+//    }
 
     buildTypes {
         release {
