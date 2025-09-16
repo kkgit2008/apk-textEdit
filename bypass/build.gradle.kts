@@ -20,7 +20,7 @@ android {
 //                 abiFilters("arm64-v8a")
 //             }
 //         }
-//     }
+     }
 //    externalNativeBuild {
 //        cmake {
 //            path("src/main/cpp/CMakeLists.txt")
