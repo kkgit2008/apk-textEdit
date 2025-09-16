@@ -14,15 +14,13 @@ android {
         targetSdk = libs.versions.targetSdk.get().toInt()
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
-        
-        externalNativeBuild {
-            cmake {
-                arguments("-DANDROID_APP_PLATFORM=android-21", "-DANDROID_STL=c++_static")
-                abiFilters("arm64-v8a")
-            }
-        }
-    }
-    
+//         externalNativeBuild {
+//             cmake {
+//                 arguments("-DANDROID_APP_PLATFORM=android-21", "-DANDROID_STL=c++_static")
+//                 abiFilters("arm64-v8a")
+//             }
+//         }
+//     }
 //    externalNativeBuild {
 //        cmake {
 //            path("src/main/cpp/CMakeLists.txt")
