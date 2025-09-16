@@ -15,21 +15,21 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
         
-        externalNativeBuild {
-            cmake {
-                arguments("-DANDROID_APP_PLATFORM=android-21", "-DANDROID_STL=c++_static")
-                abiFilters("arm64-v8a")
-                cFlags("-fcolor-diagnostics")
-            }
-        }
-    }
-    
-    externalNativeBuild {
-        cmake {
-            path("src/main/cpp/CMakeLists.txt")          
-            version = libs.versions.cmake.get()
-        }
-    }
+//         externalNativeBuild {
+//             cmake {
+//                 arguments("-DANDROID_APP_PLATFORM=android-21", "-DANDROID_STL=c++_static")
+//                 abiFilters("arm64-v8a")
+//                 cFlags("-fcolor-diagnostics")
+//             }
+//         }
+//     }
+//     
+//     externalNativeBuild {
+//         cmake {
+//             path("src/main/cpp/CMakeLists.txt")          
+//             version = libs.versions.cmake.get()
+//         }
+//     }
     
     packaging {
         jniLibs.excludes.add("**/libtree-sitter*.so")
