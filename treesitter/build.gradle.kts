@@ -22,7 +22,7 @@ android {
 //                 cFlags("-fcolor-diagnostics")
 //             }
 //         }
-//     }
+     }
 //     
 //     externalNativeBuild {
 //         cmake {
